@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="./app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <title>Word Counter</title>
+</head>
+<body>
+    <section id="hidden-sec">
+        <div>
+            <h1>About Me</h1>
+            <p class="para">
+                Do you need to write a text with a specific word or character limit? Do you want to change the case of your text easily? If yes, then you need this app!
+                This app is a simple and powerful tool that can help you with your writing tasks. You can use it to:
+                
+                <ul>
+                    <br>
+                    <li class="para">
+                        	Count the number of characters and words in your text. You can also see the average word length and sentence length.
+                    </li>
+                    <br>
+                    <li class="para">
+                        	Convert your text into upper case, lower case, title case, or sentence case. You can also toggle between these options with a single tap.
+                    </li>
+                    <br>
+                    <li class="para">
+                        	Copy, paste, share, or save your text with ease. You can also export your text as a PDF or a TXT file.
+                    </li>
+                </ul>
+                <br>
+                <p class="para">
+                    This app is fast, accurate, and easy to use. It works offline and does not require any permissions or subscriptions. It is compatible with all devices and platforms.
+                    Whether you are writing an essay, a tweet, a blog post, or a caption, this app can help you save time and improve your writing. Download it now and try it for yourself!
+                </p>
+
+            </p>
+            <button id="back-btn">Back</button>
+        </div>
+    </section>
+    <section>
+        <header id="flex-box">
+        <h1>Word Counter</h1>
+        <div id="btn-container">
+        <div style="display: flex; justify-content: space-between;">
+         <button id="about-btn">About</button>
+        <button id="dark-mode"><img id="icon" src="./Icons/moon.png" alt=""></button>
+        <button id="light-mode"><img id="icon" src="./Icons/sun.png" alt=""></button>
+        </div>
+        <button id="menu-btn"><img src="./Icons/menu.png" alt=""></button>
+        </div>
+        </header>
+        <div id="hidden-container">
+            <button id="btn-about">About</button>
+            <button> Dark Mode</button>
+            
+            </div>
+    </section>
+    <main>
+        <section>
+            <div>
+                <h2 id="word-char-count">You have Written <span id="char">0</span> Characters and <span id="word">0</span> Words. </h2>
+            </div>
+            <div>
+                <textarea name="" id="text-box" cols="30" rows="10"></textarea>
+            </div>
+            <button id="upperCase" class="btn">Uppercase</button>
+            <button id="lowerCase" class="btn">Lowercase</button>
+            <button id="capitilize" class="btn">Capitilize</button>
+            <button id="trim" class="btn">Trim</button>
+            <button id="copy-text" class="btn">Copy</button>
+        </section>
+    </main>
+</body>
+</html>

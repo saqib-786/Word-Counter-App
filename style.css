@@ -1,0 +1,215 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+header{
+    background-color: crimson;
+    padding: 10px;
+    color: whitesmoke;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 10px 2%;
+}
+main{
+    margin: 20px;
+}
+
+#text-box{
+    width: 100%;
+    margin-top: 20px;
+    font-size: 1.5em;
+    outline: none;
+    padding: 10px;
+}
+#text-box:focus{
+    border: 1px solid crimson;
+}
+
+.btn{
+    width: 120px;
+    height: 35px;
+    background-color: crimson;
+    border: none;
+    color: white;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    letter-spacing: 2px;
+    margin-top: 10px;
+    transition: all;
+    transition-duration: 0.5s;
+}
+.dark-mode-btn{
+    width: 120px;
+    height: 35px;
+    background:none;
+    border: none;
+    color:#EEFF0E ;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 1px solid #EEFF0E;
+    cursor: pointer;
+    letter-spacing: 2px;
+    margin-top: 10px;
+    transition: all;
+    transition-duration: 0.5s;
+
+}
+.dark-mode-btn:hover{
+    /* border: 1px solid white !important;
+    color: white !important; */
+    border: none !important;
+    background-color: #EEFF0E !important;
+    color: #00002C !important;
+}
+.btn:hover{
+    background: none;
+    border: 1px solid crimson;
+    color: crimson;
+}
+
+#flex-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#about-btn{
+    width: 120px;
+    height: 35px;
+    background: none;
+    outline: none;
+    color: white;
+    letter-spacing: 2px;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+#hidden-sec{
+    background-color: whitesmoke;
+    min-height: 80vh;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 5555555;
+    min-width:100%;
+    display: none;
+    justify-content: center;
+    padding: 20px;
+
+}
+
+#hidden-sec > div{
+    width: 50%;
+}
+#hidden-sec h1{
+    margin: 10px 0px;
+}
+
+.para{
+    text-align: justify;
+    letter-spacing: 1px;
+    color: black !important;
+}
+
+#back-btn{
+    display: block;
+    margin: 20px auto;
+    width: 120px;
+    height: 35px;
+    background-color: crimson;
+    border: none;
+    outline: none;
+    color: white;
+    letter-spacing: 2px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+
+}
+#back-btn:hover{
+    background: none;
+    border: 1px solid crimson;
+    color: crimson;
+}
+
+#dark-mode{
+    background: none;
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+    margin: 0px 20px;
+}
+#light-mode{
+    background: none;
+    display: none;
+    border: none;
+    cursor: pointer;
+    margin: 0px 20px;
+}
+#menu-btn{
+    background: none;
+    display: none;
+    border: none;
+    cursor: pointer;
+    margin: 0px 10px; 
+}
+
+#hidden-container{
+    background-color: whitesmoke;
+    border: 1px solid gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    height: 40vh;
+    /* margin: 0px 10px; */
+    display: none;
+    z-index: 555555555;
+
+}
+#hidden-container button{
+    width: 120px;
+    margin: 10px 0px;
+    height: 35px;
+    background-color: crimson;
+    border: none;
+    outline:none;
+    border-radius: 5px;
+    color: white;
+}
+
+@media only screen and (max-width:425px){
+    .btn{
+        display: block;
+        margin: 10px auto;
+        width: 100%;
+    }
+    #about-btn{
+        display: none;
+    }
+    #flex-box h1{
+        font-size: 16px;
+    }
+
+    #word-char-count{
+        font-size: 1em !important;
+    }
+    #hidden-sec > div{
+        width: 90%;
+    }
+    #menu-btn{
+        display: block;
+    }
+
+    #dark-mode{
+        display: none;
+        color: goldenrod;
+    }
+
+}
+
