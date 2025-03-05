@@ -68,12 +68,30 @@ trim.addEventListener('click',()=>{
 
 });
 
+function toastifyAlert(value){
+    Toastify({
+        text: value,
+        duration: 3000,
+        destination: "",
+        newWindow: true,
+        close: true,
+        gravity: "top", // `top` or `bottom`
+        position: "center", // `left`, `center` or `right`
+        stopOnFocus: true, // Prevents dismissing of toast on hover
+        style: {
+          background: "linear-gradient(to right, #00b09b, #96c93d)",
+        },
+        onClick: function(){} // Callback after click
+      }).showToast();
+}
+
 copyText.addEventListener('click',()=>{
     textBox.select();
     textBox.setSelectionRange(0,99999);
     navigator.clipboard.writeText(textBox.value);
     setTimeout(()=>{
-    alert('Copy to Clipboard');
+    // alert('Copy to Clipboard');
+    toastifyAlert('Copy to Clipboard');
 
     },300)
 })
